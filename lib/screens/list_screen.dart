@@ -1,4 +1,4 @@
-// lib/screens/list_screen.drt
+// lib/screens/list_screen.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_book_list/models/book.dart';
 import 'package:flutter_book_list/repositories/book_repository.dart';
