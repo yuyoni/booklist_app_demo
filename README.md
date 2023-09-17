@@ -1,16 +1,9 @@
 # flutter_book_list
 
-A new Flutter project.
+# 북리스트 어플 데모 (BookList App Demo)
 
-## Getting Started
+이 프로젝트는 Flutter를 연습하기 위해 만든 화면 UI와 기능들로 구성된 북리스트 어플의 데모 버전입니다.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![App Screenshot](images/appimage1.png)
+![App Screenshot](images/appimage2.png)
+![App Screenshot](images/appimage3.png)
