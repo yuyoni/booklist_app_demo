@@ -17,7 +17,9 @@ class _DetailScreenState extends State<DetailScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.book.title),
+        title: Text(
+          widget.book.title,
+        ),
       ),
       body: ListView(
         children: [
@@ -28,31 +30,24 @@ class _DetailScreenState extends State<DetailScreen> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Container(
-                  width: MediaQuery.of(context).size.width * 0.8,
-                  padding: EdgeInsets.all(10),
+                  width: MediaQuery.of(context).size.width * 0.85,
+                  padding: EdgeInsets.all(20),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Container(
+                      Center(
                         child: Text(
                           widget.book.title,
                           style: TextStyle(
-                            fontSize: 30,
-                            fontWeight: FontWeight.bold,
+                            fontSize: 27,
+                            fontWeight: FontWeight.w400,
                           ),
-                        ),
-                      ),
-                      Text(
-                        widget.book.subtitle,
-                        style: TextStyle(
-                          fontSize: 20,
-                          color: Colors.grey,
                         ),
                       ),
                     ],
                   )),
               Container(
-                width: MediaQuery.of(context).size.width * 0.15,
+                width: MediaQuery.of(context).size.width * 0.14,
                 padding: EdgeInsets.all(10),
                 child: Center(
                   child: IconButton(
@@ -75,6 +70,19 @@ class _DetailScreenState extends State<DetailScreen> {
             ],
           ),
           Padding(padding: EdgeInsets.all(5)),
+          Container(
+            padding: EdgeInsets.symmetric(horizontal: 20.0),
+            child: Center(
+              child: Text(
+                widget.book.subtitle,
+                style: TextStyle(
+                  fontSize: 18,
+                  color: Colors.grey,
+                ),
+              ),
+            ),
+          ),
+          Padding(padding: EdgeInsets.all(20)),
           Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -99,10 +107,13 @@ class _DetailScreenState extends State<DetailScreen> {
               ),
             ],
           ),
-          Padding(padding: EdgeInsets.all(5)),
+          Padding(padding: EdgeInsets.all(15)),
           Container(
             padding: EdgeInsets.all(15),
-            child: Text(widget.book.description),
+            child: Text(
+              widget.book.description,
+              style: TextStyle(fontWeight: FontWeight.w400),
+            ),
           )
         ],
       ),

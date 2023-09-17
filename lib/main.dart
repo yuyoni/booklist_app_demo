@@ -11,6 +11,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Book List App',
       home: ListScreen(),
+      theme: ThemeData(
+        fontFamily: 'GmarketSans',
+      ),
     );
   }
 }

@@ -11,13 +11,16 @@ class ListScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(' 도서 목록 앱 '),
+        title: Text('도서 목록 앱'),
       ),
-      body: ListView.builder(
-        itemCount: books.length,
-        itemBuilder: (context, index) {
-          return BookTile(book: books[index]);
-        },
+      body: Padding(
+        padding: EdgeInsets.only(top: 10.0), // 상단에만 패딩을 주었습니다.
+        child: ListView.builder(
+          itemCount: books.length,
+          itemBuilder: (context, index) {
+            return BookTile(book: books[index]);
+          },
+        ),
       ),
     );
   }
