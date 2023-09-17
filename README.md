@@ -1,7 +1,5 @@
 # flutter_book_list
 
-# 북리스트 어플 데모 (BookList App Demo)
-
 이 프로젝트는 Flutter를 연습하기 위해 만든 화면 UI와 기능들로 구성된 북리스트 어플의 데모 버전입니다.
 
 ## < App Screenshot >
